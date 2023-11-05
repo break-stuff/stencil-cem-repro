@@ -1,6 +1,12 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
+
+export type GridData = {
+  columns?: string[];
+  rows?: string[][];
+};
+
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
@@ -21,6 +27,11 @@ export class MyComponent {
    * The last name
    */
   @Prop() last: string;
+
+  /**
+   * Data to populate 
+   */
+  @Prop() gridData: GridData = {};
 
   private getText(): string {
     return format(this.first, this.middle, this.last);

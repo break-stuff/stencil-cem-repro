@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.tsx",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyComponent",
+          "members": [
+            {
+              "kind": "field",
+              "name": "first",
+              "type": {
+                "text": "string"
+              },
+              "description": "The first name"
+            },
+            {
+              "kind": "field",
+              "name": "middle",
+              "type": {
+                "text": "string"
+              },
+              "description": "The middle name"
+            },
+            {
+              "kind": "field",
+              "name": "last",
+              "type": {
+                "text": "string"
+              },
+              "description": "The last name"
+            },
+            {
+              "kind": "field",
+              "name": "gridData",
+              "type": {
+                "text": "GridData"
+              },
+              "default": "{}",
+              "description": "Data to populate"
+            },
+            {
+              "kind": "method",
+              "name": "getText",
+              "privacy": "private",
+              "return": {
+                "type": {
+                  "text": "string"
+                }
+              }
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "first",
+              "fieldName": "first",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "middle",
+              "fieldName": "middle",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "last",
+              "fieldName": "last",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "grid-data",
+              "fieldName": "gridData",
+              "type": {
+                "text": "GridData"
+              }
+            }
+          ],
+          "tagName": "my-component",
+          "events": [],
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyComponent",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "src/components/my-component/my-component.tsx"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "my-component",
+          "declaration": {
+            "name": "MyComponent",
+            "module": "src/components/my-component/my-component.tsx"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/utils/utils.spec.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/utils/utils.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "format",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "first",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "middle",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "last",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "format",
+          "declaration": {
+            "name": "format",
+            "module": "src/utils/utils.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.e2e.ts",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/my-component/my-component.spec.ts",
+      "declarations": [],
+      "exports": []
+    }
+  ]
+}
